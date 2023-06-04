@@ -1,0 +1,7 @@
+Software Requirements
+
+Fastapi
+unicorn
+Venv
+sqlite
+sqlaclchemy
