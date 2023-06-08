@@ -1,15 +1,21 @@
 import requests
+from enum import Enum
+
+class Category(Enum):
+    INTERNET = "internet"
+    CABLE = "cable"
+    TV = "tv"
 
 # Define the URL for the POST request
-url = "http://localhost:8000/"  # Replace with your server URL
+url = "http://localhost:8000/items/"
 
 # Define the data to be sent in the request body
 data = {
-    "id": 3,
-    "zipcode": 12345,
-    "city": "New City",
-    "price": 99.99,
-    "category": "tv"
+    "id": 2,
+    "zipcode": 12425,
+    "city": "Clifton Park",
+    "price": 80.99,
+    "category": Category.INTERNET.value
 }
 
 # Send the POST request
